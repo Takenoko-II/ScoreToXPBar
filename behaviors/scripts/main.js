@@ -1,4 +1,4 @@
-import { world, system, Entity, Player } from "@minecraft/server";
+import { world, system, Entity } from "@minecraft/server";
 
 //オブジェクトの追加
 const objectiveNames = ["xpBarMax", "xpBarValue", "xpBarSpeed"];
