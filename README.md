@@ -1,4 +1,4 @@
-# ScoreToXPBar_2.0
+# ScoreToXPBar
 
 ScoreToXPBar Version 2.0
 
