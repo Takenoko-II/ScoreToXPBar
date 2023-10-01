@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "§l§aScoreToXPBar 2.0 Resources",
+        "description": "xpBarMax : 最大値 (0～24791)\nxpBarValue : 現在の値 (0～24791)\nxpBarSpeed : 経験値バーが変化する時間 (1～20)",
+        "version": [ 0, 2, 0 ],
+        "uuid": "a1ef8780-014c-4c5d-9939-8cab670c3e9a",
+        "min_engine_version": [ 1, 20, 30 ]
+    },
+    "modules": [
+        {
+        "type": "resources",
+        "version": [ 0, 2, 0 ],
+        "uuid": "b64a9e0c-e751-4a49-bd72-fdbe6b40bad8"
+        }
+    ]
+}

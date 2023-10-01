@@ -1,0 +1,26 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "§l§aScoreToXPBar 2.0 Behaviors",
+        "description": "xpBarMax : 最大値 (0～24791)\nxpBarValue : 現在の値 (0～24791)\nxpBarSpeed : 経験値バーが変化する時間 (1～20)",
+        "uuid": "8f34772a-6fa5-45ef-9b17-7ee2c753ca5e",
+        "version": [ 0, 2, 0 ],
+        "min_engine_version": [ 1, 20, 30 ]
+    },
+    "modules": [
+        {
+            "description": "",
+            "type": "script",
+            "language": "JavaScript",
+            "uuid": "8df65f51-d022-4407-83ca-478e9d0baa5e",
+            "version": [ 0, 2, 0 ],
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.6.0-beta"
+        }
+    ]
+}
