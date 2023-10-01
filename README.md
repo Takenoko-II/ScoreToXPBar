@@ -44,7 +44,6 @@ ScoreToXPBar_2.0 is under [Mit license](https://en.wikipedia.org/wiki/MIT_Licens
 
 ## Author
 
-* [Takenoko-II](https://github.com/Takenoko-II)
-* Twitter: https://twitter.com/Takenoko_4096
-* Discord: takenoko_4096 | たけのこII#1119
-* 
+- [Takenoko-II](https://github.com/Takenoko-II)
+- Twitter: https://twitter.com/Takenoko_4096
+- Discord: takenoko_4096 | たけのこII#1119
