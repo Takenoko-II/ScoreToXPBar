@@ -8,22 +8,25 @@ ScoreToXPBar Version 2.0
 
 経験値バーを操作したいプレイヤーにtag「xpBar」を付けると、
 そのプレイヤーの経験値バーを/scoreboardから操作できるようになります。
+```mcfunction:example
+tag @s add xpBar
+```
 
 オブジェクト「xpBarMax」を変更することで、経験値バーの最大値を定めることができます。
 (最小値: 1, 最大値: 24791)
-```
+```mcfunction:example
 scoreboard players set @s xpBarValue 100
 ```
 
 オブジェクト「xpBarValue」を変更することで、経験値バーの値を操作することができます。
 (最小値: 0, 最大値: xpBarMax)
-```
+```mcfunction:example
 scoreboard players add @s xpBarValue 50
 ```
 
 オブジェクト「xpBarSpeed」を変更することで、経験値バーが動くスピードを変えることができます。
 (最小値: 1, 最大値: 20)
-```
+```mcfunction:example
 scoreboard players set @s xpBarSpeed 14
 ```
 
