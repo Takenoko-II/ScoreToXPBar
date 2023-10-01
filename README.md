@@ -40,7 +40,6 @@ scoreboard players set @s xpBarSpeed 14
 
 ## License
 
-copyright (c) 2023 Takenoko-II
 ScoreToXPBar_2.0 is under [Mit license](https://en.wikipedia.org/wiki/MIT_License).
 
 ## Author
