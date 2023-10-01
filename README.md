@@ -36,7 +36,7 @@ scoreboard players set @s xpBarSpeed 14
 
 - xpBarMaxのデフォルト値は1のため、xpBarMaxを変更する前にxpBarValueを変更してしまうと変化が分かりにくい可能性があります。
 - scoreboardの値を範囲外の値に設定すると、1tick後に範囲内の数値に強制的に丸められます。
-- random.levelupのサウンドが聞こえなくなります。代わりに**random.level__.__up**を使用することができます。
+- random.levelupのサウンドが聞こえなくなります。代わりに**random.level.up**を使用することができます。
 
 ## License
 
