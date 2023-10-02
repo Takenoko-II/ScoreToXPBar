@@ -30,7 +30,7 @@ scoreboard players add @s xpBarValue 50
 scoreboard players set @s xpBarSpeed 14
 ```
 
-## Compatible Version
+## Compatible Versions
 
 - 1.20.30
 - 1.20.31
