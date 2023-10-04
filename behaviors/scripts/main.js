@@ -11,13 +11,15 @@ for (const objectiveName of objectiveNames) {
 /**
  * targetのscoreboardの値の範囲を制限する関数。
  * 値を持っていなければ範囲の最小値を与える。
- * @param {Entity} target 
+ * @param {Entity|string} target 
  * @param {string} objectiveName 
  * @param {{ min: number, max: number }} range 
  */
 function limitScore(target, objectiveName, range) {
     const objective = world.scoreboard.getObjective(objectiveName);
+    if (!objective) return range.min;
     const scoreValue = objective.getScore(target);
+    if (!scoreValue) return range.min;
     const limitedValue = Math.max(range.min, Math.min(range.max, scoreValue));
 
     target.runCommand(`scoreboard players add @s ${objectiveName} 0`);
