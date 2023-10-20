@@ -41,8 +41,8 @@ system.runInterval(() => {
 
         //経験値ポイントを移動スピードで割ったものを加算
         const xpPoint = value * 1002 / max - player.xpEarnedAtCurrentLevel;
-        const xpPointMoveSpeed = Math.abs(speed - 20) + 1;
-        player.addExperience(xpPoint / xpPointMoveSpeed);
+        const xpPointMoveSpeed = 20 - speed + 1;
+        player.addExperience(xpPoint / xpPointMoveSpeed + xpPoint % xpPointMoveSpeed / 4);
 
         //経験値レベルをxpBarValueの値にセット
         player.addLevels(value - 129);
