@@ -1,6 +1,6 @@
 # ScoreToXPBar
 
-ScoreToXPBar Version 2.0
+ScoreToXPBar Version 2.2
 
 プレイヤーが持つスコアボードの値をそのプレイヤーの経験値バーに代入します。
 
@@ -34,6 +34,7 @@ scoreboard players set @s xpBarSpeed 14
 
 - 1.20.30
 - 1.20.31
+- 1.20.32
 
 ## Note
 
@@ -43,7 +44,7 @@ scoreboard players set @s xpBarSpeed 14
 
 ## License
 
-ScoreToXPBar_2.0 is under [Mit license](https://en.wikipedia.org/wiki/MIT_License).
+ScoreToXPBar_2.2 is under [Mit license](https://en.wikipedia.org/wiki/MIT_License).
 
 ## Author
 

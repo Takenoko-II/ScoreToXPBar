@@ -1,11 +1,11 @@
 {
     "format_version": 2,
     "header": {
-        "name": "§l§aScoreToXPBar 2.1 Behaviors",
+        "name": "§l§aScoreToXPBar 2.2 Behaviors",
         "description": "xpBarMax : 最大値 (0～24791)\nxpBarValue : 現在の値 (0～xpBarMax)\nxpBarSpeed : 経験値バーが変化する時間 (1～20)",
         "uuid": "8f34772a-6fa5-45ef-9b17-7ee2c753ca5e",
-        "version": [ 0, 2, 1 ],
-        "min_engine_version": [ 1, 20, 30 ]
+        "version": [ 0, 2, 2 ],
+        "min_engine_version": [ 1, 20, 32 ]
     },
     "modules": [
         {
@@ -13,7 +13,7 @@
             "type": "script",
             "language": "JavaScript",
             "uuid": "8df65f51-d022-4407-83ca-478e9d0baa5e",
-            "version": [ 0, 2, 1 ],
+            "version": [ 0, 2, 2 ],
             "entry": "scripts/main.js"
         }
     ],
