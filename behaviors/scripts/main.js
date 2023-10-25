@@ -1,7 +1,7 @@
 import { world, system } from "@minecraft/server";
 
 //オブジェクトの追加
-const objectiveNames = ["xpBarMax", "xpBarValue", "xpBarSpeed"];
+const objectiveNames = ["xpBarMax", "xpBarValue", "xpBarSpeed", "xpBarLvOverrider"];
 for (const objectiveName of objectiveNames) {
     //オブジェクトが既に追加されていれば飛ばす
     if (world.scoreboard.getObjective(objectiveName)) continue;
@@ -17,9 +17,12 @@ for (const objectiveName of objectiveNames) {
  */
 function limitScore(target, objectiveName, range) {
     const objective = world.scoreboard.getObjective(objectiveName);
-    if (!objective) return range.min;
+    if (!objective && objectiveName !== "xpBarLvOverrider") return range.min;
     const scoreValue = objective.getScore(target);
-    if (!scoreValue) return range.min;
+    if (scoreValue === undefined) {
+        if (objectiveName === "xpBarLvOverrider") return;
+        return range.min;
+    }
     const limitedValue = Math.max(range.min, Math.min(range.max, scoreValue));
 
     target.runCommand(`scoreboard players add @s ${objectiveName} 0`);
@@ -35,6 +38,7 @@ system.runInterval(() => {
         const max = limitScore(player, "xpBarMax", { min: 1, max: 24791 });
         const value = limitScore(player, "xpBarValue", { min: 0, max: max });
         const speed = limitScore(player, "xpBarSpeed", { min: 1, max: 20 });
+        const lvOverrider = limitScore(player, "xpBarLvOverrider", { min: 0, max: 24791 });
 
         //経験値レベルを129にセット
         player.addLevels(129 - player.level);
@@ -45,6 +49,6 @@ system.runInterval(() => {
         player.addExperience(xpPoint / xpPointMoveSpeed + xpPoint % xpPointMoveSpeed / 4);
 
         //経験値レベルをxpBarValueの値にセット
-        player.addLevels(value - 129);
+        player.addLevels(lvOverrider ?? value - 129);
     }
 });
