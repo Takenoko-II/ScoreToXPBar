@@ -1,4 +1,4 @@
-import { world, system, Entity } from "@minecraft/server";
+import { world, system } from "@minecraft/server";
 
 //オブジェクトの追加
 const objectiveNames = ["xpBarMax", "xpBarValue", "xpBarSpeed"];
@@ -11,7 +11,7 @@ for (const objectiveName of objectiveNames) {
 /**
  * targetのscoreboardの値の範囲を制限する関数。
  * 値を持っていなければ範囲の最小値を与える。
- * @param {Entity|string} target 
+ * @param {import("@minecraft/server").Entity | import("@minecraft/server").ScoreboardIdentity | string} target 
  * @param {string} objectiveName 
  * @param {{ min: number, max: number }} range 
  */
