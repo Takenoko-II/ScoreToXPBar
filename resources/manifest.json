@@ -2,7 +2,7 @@
     "format_version": 2,
     "header": {
         "name": "§l§aScoreToXPBar 2.4 Resources",
-        "description": "xpBarMax : 最大値 (0～24791)\nxpBarValue : 現在の値 (0～xpBarMax)\nxpBarSpeed : 経験値バーが変化する時間 (1～20)\nxpBarLvOverrider : 表示するレベルを上書き可 (0～24791, 値未設定状態も可)",
+        "description": "xpBarMax : 最大値 (0～24791)\nxpBarValue : 現在の値 (0～xpBarMax)\nxpBarSpeed : 経験値バーが変化する時間 (1～20)\nxpBarLvOverrider : 表示するレベルを上書き可 (0～24791, 値未設定状態も可)\nCreated by @Takenoko-II",
         "version": [ 0, 2, 4 ],
         "uuid": "a1ef8780-014c-4c5d-9939-8cab670c3e9a",
         "min_engine_version": [ 1, 20, 40 ]
