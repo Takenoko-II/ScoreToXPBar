@@ -30,6 +30,16 @@ scoreboard players add @s xpBarValue 50
 scoreboard players set @s xpBarSpeed 14
 ```
 
+オブジェクト「xpBarLvOverrider」を設定することで、経験値バーに表示するレベルをxpBarValueの値に関係なく操作することができます。
+(最小値: 0, 最大値: 24791, 値未設定の状態も可)
+```mcfunction:example
+scoreboard players set @s xpBarLvOverrider 123
+```
+またリセットすることで、レベル表示の上書きを解除し、xpBarValueの値に依存した状態に戻すことができます。
+```mcfunction:example
+scoreboard players reset @s xpBarLvOverrider
+```
+
 ## Compatible Versions
 
 - 1.20.40
