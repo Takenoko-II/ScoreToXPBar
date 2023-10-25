@@ -1,6 +1,6 @@
 # ScoreToXPBar
 
-ScoreToXPBar Version 2.3
+ScoreToXPBar Version 2.4
 
 プレイヤーが持つスコアボードの値をそのプレイヤーの経験値バーに代入します。
 
@@ -52,7 +52,7 @@ scoreboard players reset @s xpBarLvOverrider
 
 ## License
 
-ScoreToXPBar_2.3 is under [Mit license](https://en.wikipedia.org/wiki/MIT_License).
+ScoreToXPBar_2.4 is under [Mit license](https://en.wikipedia.org/wiki/MIT_License).
 
 ## Author
 
