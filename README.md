@@ -33,10 +33,6 @@
 - BEはこのような操作をするとレベルアップの音が非常にうるさいので、リソースパックでレベルアップ時にサウンドが再生されないようにしています
 - サウンド `random.levelup` 自体は手を加えていないのでそのまま使用可能です
 
-## License
-
-[Mit license](https://en.wikipedia.org/wiki/MIT_License)
-
 ## Author
 
 - [Takenoko-II](https://github.com/Takenoko-II)
