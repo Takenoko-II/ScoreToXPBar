@@ -1,0 +1,23 @@
+{
+    "include": ["behaviors/scripts/src/"],
+    "exclude": [],
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "module": "ES2022",
+        "target": "es2022",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "strict": true,
+        "noImplicitOverride": true,
+        "exactOptionalPropertyTypes": true,
+        "allowUnusedLabels": false,
+        "allowUnreachableCode": false,
+        "noImplicitReturns": true,
+        "declaration": true,
+        // "noUnusedParameters": true,
+        // "noUnusedLocals": true,
+        "rootDir": "behaviors/scripts/src",
+        "outDir": "behaviors/scripts/dest"
+    }
+}

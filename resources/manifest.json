@@ -1,17 +1,24 @@
 {
     "format_version": 2,
     "header": {
-        "name": "§l§aScoreToXPBar 2.4 Resources",
-        "description": "xpBarMax : 最大値 (0～24791)\nxpBarValue : 現在の値 (0～xpBarMax)\nxpBarSpeed : 経験値バーが変化する時間 (1～20)\nxpBarLvOverrider : 表示するレベルを上書き可 (0～24791, 値未設定状態も可)\nCreated by @Takenoko-II",
-        "version": [ 0, 2, 4 ],
-        "uuid": "a1ef8780-014c-4c5d-9939-8cab670c3e9a",
-        "min_engine_version": [ 1, 20, 40 ]
+        "name": "ScoreToXPBar-R",
+        "description": "経験値バー変動時にサウンド 'random.levelup' が鳴らないようにします",
+        "uuid": "b76e4ea6-41ac-41bd-9cb1-0bc02a349b3f",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 21, 100]
     },
     "modules": [
         {
-        "type": "resources",
-        "version": [ 0, 2, 4 ],
-        "uuid": "b64a9e0c-e751-4a49-bd72-fdbe6b40bad8"
+            "description": "",
+            "type": "resources",
+            "uuid": "9c6e5419-8ee5-4a25-8975-0c1ddf6f054d",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "8e4c170b-ad37-4529-b17d-b47d747717ec",
+            "version": [1, 0, 0]
         }
     ]
 }

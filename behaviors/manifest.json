@@ -1,26 +1,34 @@
 {
     "format_version": 2,
     "header": {
-        "name": "§l§aScoreToXPBar 2.4 Behaviors",
-        "description": "xpBarMax : 最大値 (0～24791)\nxpBarValue : 現在の値 (0～xpBarMax)\nxpBarSpeed : 経験値バーが変化する時間 (1～20)\nxpBarLvOverrider : 表示するレベルを上書き可 (0～24791, 値未設定状態も可)\nCreated by @Takenoko-II",
-        "uuid": "8f34772a-6fa5-45ef-9b17-7ee2c753ca5e",
-        "version": [ 0, 2, 4 ],
-        "min_engine_version": [ 1, 20, 40 ]
+        "name": "ScoreToXPBar-B",
+        "description": "経験値バーの値をプレイヤーのスコアボードの値に応じて変動させます",
+        "uuid": "8e4c170b-ad37-4529-b17d-b47d747717ec",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 21, 100]
     },
     "modules": [
         {
             "description": "",
             "type": "script",
-            "language": "JavaScript",
-            "uuid": "8df65f51-d022-4407-83ca-478e9d0baa5e",
-            "version": [ 0, 2, 4 ],
+            "language": "javascript",
+            "uuid": "15cab5de-f90d-4557-8cda-1a7842f5347e",
+            "version": [1, 0, 0],
             "entry": "scripts/main.js"
         }
     ],
     "dependencies": [
         {
             "module_name": "@minecraft/server",
-            "version": "1.6.0"
+            "version": "2.1.0"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "2.0.0"
+        },
+        {
+            "uuid": "b76e4ea6-41ac-41bd-9cb1-0bc02a349b3f",
+            "version": [1, 0, 0]
         }
     ]
 }
