@@ -1,0 +1,10 @@
+{
+    "individual_event_sounds": {
+        "events": {
+            "levelup" : {
+                "pitch" : 1.0,
+                "sound" : "none"
+            }
+        }
+    }
+}
