@@ -37,7 +37,7 @@ class XPBar {
 
     private restrictScoreValues(): XPBarScoreValues {
         const speed = this.restrict(XPBar.SCOREBOARD_SPEED, IntRange.minMax(1, 20), false);
-        const maxValue = this.restrict(XPBar.SCOREBOARD_MAX_VALUE, IntRange.minMax(0, 24791), false);
+        const maxValue = this.restrict(XPBar.SCOREBOARD_MAX_VALUE, IntRange.minMax(1, 24791), false);
         const value = this.restrict(XPBar.SCOREBOARD_VALUE, IntRange.minMax(0, maxValue), false);
         const level = this.restrict(XPBar.SCOREBOARD_LEVEL, IntRange.minMax(0, 24791), true);
 
